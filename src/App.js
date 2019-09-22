@@ -47,26 +47,28 @@ export default class App extends Component {
   };
 
   handleEdit = itemId => {
-    const { items } = this.state;
-    const updatedItem = items.filter(item => {
-      return item.id !== itemId;
-    });
-    this.setState({ items: updatedItem });
+    const { items, item } = this.state;
+    if (item === "") {
+      const updatedItem = items.filter(item => {
+        return item.id !== itemId;
+      });
+      this.setState({ items: updatedItem });
 
-    const editItem = items.find(item => {
-      return item.id === itemId;
-    });
+      const editItem = items.find(item => {
+        return item.id === itemId;
+      });
 
-    const updateItem = {
-      id: editItem.id,
-      item: editItem.item,
-      edit: true
-    };
-    this.setState({
-      id: updateItem.id,
-      item: updateItem.item,
-      edit: updateItem.edit
-    });
+      const updateItem = {
+        id: editItem.id,
+        item: editItem.item,
+        edit: true
+      };
+      this.setState({
+        id: updateItem.id,
+        item: updateItem.item,
+        edit: updateItem.edit
+      });
+    }
   };
 
   handleCompleted = itemId => {
