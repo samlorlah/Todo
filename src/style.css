@@ -1,0 +1,55 @@
+/************* USER *****************/
+
+.con {
+    background: url(./img/pen.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 99%;
+    height: 97vh;
+}
+
+h1{
+    font-size: 10em;
+    color: deepskyblue;
+}
+
+h2{
+    font-size: 7em;
+    color: rgb(27, 4, 80);
+}
+
+.txt {
+    font-size: 2em;
+
+}
+
+.card-bd {
+    background-color: chartreuse;
+}
+
+.nav-col{
+    background: #004FF9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFF94C, #004FF9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFF94C, #004FF9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.side-nav{
+    background-color: rgb(29, 52, 100);
+}
+.table-head{
+    background: #F1F2B5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 25px;
+}
+
+.printcard{
+    font-size: 25px;
+}
+
+.con-img {
+    position: absolute;
+    left: 400px;
+}
